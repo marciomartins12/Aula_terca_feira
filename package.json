@@ -1,0 +1,31 @@
+{
+  "name": "emporio_ribeiro",
+  "version": "1.0.0",
+  "description": "sistema gerenciador do comercio. um sistema pra gerenciar as compras que sao feitas no comercio.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciomartins12/emporio_ribeiro.git"
+  },
+  "keywords": [
+    "sistema",
+    "comercio"
+  ],
+  "author": "marciomartins12 (donaDev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marciomartins12/emporio_ribeiro/issues"
+  },
+  "homepage": "https://github.com/marciomartins12/emporio_ribeiro#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.2",
+    "express-session": "^1.18.1",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10",
+    "sequelize": "^6.37.7"
+  }
+}

@@ -22,7 +22,7 @@ app.use(
     })
 );
 app.use(session({
-    secret: 'pouso9090',
+    secret: 'emporioRibeiro',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
@@ -32,7 +32,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 
-app.use("/emporioribeiro", routerAdmin)
+app.use("/emporioribeiro", routerAdmin);
 
 app.listen(8080, () => {
     console.log(`Servidor rodando na porta http://localhost:8080`)

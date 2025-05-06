@@ -32,7 +32,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 
-app.use("/emporioribeiro", routerAdmin);
+app.use(routerAdmin);
 
 app.listen(8080, () => {
     console.log(`Servidor rodando na porta http://localhost:8080`)

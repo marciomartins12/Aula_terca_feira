@@ -1,27 +1,33 @@
 const { Sequelize, sequelize } = require('../db/conn');
 
-const produtos = sequelize.define("produtos", {
-    id_produto: {
+const model = sequelize.define("model", {
+    id_model: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false
     },
-    nome: {
+    email: {
         type: Sequelize.STRING(255),
         allowNull: false
     },
-    valor : {
+    password: {
         type: Sequelize.STRING(45),
         allowNull: false
     },
-    codigoBarras: {
-        type: Sequelize.DOUBLE,
+    user_name: {
+        type: Sequelize.STRING(45),
         allowNull: false
     },
+    last_login: {
+        type: Sequelize.DATE,
+        allowNull: true
+    }
+    ,
+
 }, {
-    tableName: 'produtos',
+    tableName: 'model',
     timestamps: false
 });
 
-module.exports = produtos;
+module.exports = model;
